@@ -6,27 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Right Angle Triangle</title>
 </head>
-<h1>Number Rightangle Triange</h1>
-<form onsubmit="return create()">
-    <input type="text" id="userInput"/>
-    <button>Create</button>
-</form>
 
 <body>
-
+    <h1>Number Rightangle Triange</h1>
+    <form onsubmit="return create()">
+        <input type="text" id="userInput" />
+        <button>Create</button>
+    </form>
 </body>
 <script>
     // 5-----------------------------------------------------------------------------
-    function create(){
-    let userInput = document.getElementById("userInput").value;
-    for (i = 1; i <= userInput; i++) {
-        for (j = 1; j <= i; j++) {
-            document.write(j);
+    function create() {
+        let userInput = document.getElementById("userInput").value;
+        for (i = 1; i <= userInput; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write(j);
+            }
+            document.write("<br>");
         }
-        document.write("<br>");
+        return false;
     }
-    return false;
-}
 </script>
 
 </html>
